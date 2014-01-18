@@ -28,9 +28,11 @@ namespace test_web
         {
             List<int> AllNumbers = new List<int>();
 
+            Random r = new Random();
+
             for (int i = 0; i < numberOfInts; i++)
             {
-                Random r = new Random();
+                
                 int randNum = r.Next(min, max);
                 AllNumbers.Add(randNum);
             }
